@@ -45,35 +45,35 @@ export default function ProductCard({ perfume, theme }: ProductCardProps) {
     <motion.div
       whileHover={{ y: -4, scale: 1.01 }}
       transition={{ duration: 0.25, ease: "easeOut" }}
-      className={`relative rounded-xl p-5 transition-all duration-300 luxury-shadow cursor-default ${s.card}`}
+      className={`relative rounded-xl overflow-hidden transition-all duration-300 cursor-default ${s.card}`}
     >
-      {perfume.tag && (
-        <span
-          className={`absolute top-4 right-4 text-[10px] font-medium uppercase tracking-widest px-2 py-0.5 rounded-full ${s.tag}`}
-        >
-          {perfume.tag}
-        </span>
-      )}
-
-      <p className={`text-[10px] uppercase tracking-[0.2em] mb-1 ${s.size}`}>
-        {perfume.brand} · {perfume.size}
-      </p>
-
-      <h3
-        className={`font-display text-lg font-semibold leading-tight mb-2 pr-16 ${s.name}`}
-      >
-        {perfume.name}
-      </h3>
-
-      <div className={`h-px w-8 mb-3 ${s.divider}`} />
-
-      <p className={`text-xs leading-relaxed mb-4 ${s.notes}`}>
-        {perfume.notes}
-      </p>
-
-      <p className={`font-display text-xl font-bold ${s.price}`}>
-        ${perfume.price.toLocaleString("es-AR")}
-      </p>
+      <div className="w-full bg-white" style={{ aspectRatio: "3/4" }}>
+        {perfume.imagen_url ? (
+          <img
+            src={perfume.imagen_url}
+            alt={perfume.perfume}
+            className="w-full h-full object-contain pointer-events-none"
+            draggable={false}
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ccc" strokeWidth="1">
+              <circle cx="12" cy="8" r="4" /><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+            </svg>
+          </div>
+        )}
+      </div>
+      <div className="p-3 flex flex-col gap-0.5">
+        <p className={`text-[9px] uppercase tracking-[0.3em] font-semibold ${s.size}`}>
+          {perfume.marca}
+        </p>
+        <h3 className={`text-xs font-medium leading-snug line-clamp-2 ${s.name}`}>
+          {perfume.perfume}
+        </h3>
+        <p className={`text-sm font-bold mt-1 ${s.price}`}>
+          USD {perfume.precio}
+        </p>
+      </div>
     </motion.div>
   );
 }

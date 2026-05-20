@@ -139,6 +139,16 @@ export const feminineBrands: Brand[] = [
   { name: "YSL",                 logo: L.ysl,            slug: "ysl" },
 ];
 
+export interface Perfume {
+  id: number;
+  perfume: string;
+  marca: string;
+  categoria: string;
+  genero: string;
+  precio: number;
+  imagen_url?: string;
+}
+
 export const FEATURED_IDS: Record<"arabes" | "masculino" | "femenino", number[]> = {
   arabes:    [930, 985, 919, 977, 950, 1039, 942, 1022, 1027, 972],
   masculino: [1089, 1208, 1293, 1426, 1411, 1437, 1289, 1101, 1160, 1085, 1371, 1075],
