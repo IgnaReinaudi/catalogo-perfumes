@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fafaf8;
+  --foreground: #1a1a1a;
+
+  --gold: #c9a84c;
+  --gold-light: #e8d5a3;
+  --gold-dark: #9a7a2e;
+
+  --arabic-bg: #1a1208;
+  --arabic-accent: #c9a84c;
+  --arabic-sand: #f5e6c8;
+
+  --masc-bg: #0d1117;
+  --masc-accent: #4a6fa5;
+  --masc-silver: #9aa5b4;
+
+  --fem-bg: #fdf8f5;
+  --fem-accent: #c8956c;
+  --fem-rose: #e8c4b8;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-dark: var(--gold-dark);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-playfair);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), "Helvetica Neue", Arial, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #c9a84c 0%, #e8d5a3 50%, #9a7a2e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-border {
+  border-image: linear-gradient(135deg, #c9a84c, #e8d5a3, #9a7a2e) 1;
+}
+
+.luxury-shadow {
+  box-shadow: 0 8px 32px rgba(201, 168, 76, 0.15),
+    0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.luxury-shadow-dark {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
