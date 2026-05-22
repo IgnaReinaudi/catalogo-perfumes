@@ -5,6 +5,7 @@
   cardBg?: string;
   origin?: string;
   perfumes?: unknown[];
+  marcaKey?: string;
 }
 
 const L: Record<string, string> = {
@@ -82,20 +83,20 @@ export const masculineBrands: Brand[] = [
   { name: "Ferrari",             logo: L.ferrari,       slug: "ferrari" },
   { name: "Givenchy",            logo: L.givenchy,      slug: "givenchy" },
   { name: "Gucci",               logo: L.gucci,         slug: "gucci" },
-  { name: "Halloween",           logo: L.halloween,     slug: "halloween" },
+  { name: "Halloween",           logo: L.halloween,     slug: "halloween",           marcaKey: "Hallowen" },
   { name: "Hugo Boss",           logo: L.hugoBoss,      slug: "hugo-boss" },
-  { name: "Jean Paul Gaultier",  logo: L.jpGaultier,    slug: "jean-paul-gaultier" },
+  { name: "Jean Paul Gaultier",  logo: L.jpGaultier,    slug: "jean-paul-gaultier",  marcaKey: "Jean Paul Galtier" },
   { name: "Lacoste",             logo: L.lacoste,       slug: "lacoste" },
   { name: "Parfums de Marly",    logo: L.parfumsMarly,  slug: "parfums-de-marly" },
   { name: "Mercedes",            logo: L.mercedes,      slug: "mercedes" },
   { name: "Mont Blanc",          logo: L.montBlanc,     slug: "mont-blanc" },
   { name: "Montale",             logo: L.montale,       slug: "montale" },
   { name: "Moschino",            logo: L.moschino,      slug: "moschino" },
-  { name: "Paco Rabanne",        logo: L.pacoRabanne,   slug: "paco-rabanne" },
+  { name: "Paco Rabanne",        logo: L.pacoRabanne,   slug: "paco-rabanne",        marcaKey: "Paco Rabbane" },
   { name: "Prada",               logo: L.prada,         slug: "prada" },
   { name: "Polo Ralph Lauren",   logo: L.ralphLauren,   slug: "polo-ralph-lauren" },
   { name: "Salvatore Ferragamo", logo: L.ferragamo,     slug: "salvatore-ferragamo" },
-  { name: "Tommy Hilfiger",      logo: L.tommy,         slug: "tommy" },
+  { name: "Tommy Hilfiger",      logo: L.tommy,         slug: "tommy",               marcaKey: "Tommy" },
   { name: "Valentino",           logo: L.valentino,     slug: "valentino",   cardBg: "#000000" },
   { name: "Versace",             logo: L.versace,       slug: "versace" },
   { name: "Xerjoff",             logo: L.xerjoff,       slug: "xerjoff" },
@@ -116,7 +117,7 @@ export const feminineBrands: Brand[] = [
   { name: "Dolce & Gabbana",     logo: L.dolceGabbana,   slug: "dolce-gabbana" },
   { name: "Givenchy",            logo: L.givenchy,       slug: "givenchy" },
   { name: "Gucci",               logo: L.gucci,          slug: "gucci" },
-  { name: "Halloween",           logo: L.halloween,      slug: "halloween" },
+  { name: "Halloween",           logo: L.halloween,      slug: "halloween",           marcaKey: "Hallowen" },
   { name: "Hugo Boss",           logo: L.hugoBoss,       slug: "hugo-boss" },
   { name: "Jean Paul Gaultier",  logo: L.jpGaultier,     slug: "jean-paul-gaultier" },
   { name: "Kenzo",               logo: L.kenzo,          slug: "kenzo" },
@@ -131,7 +132,7 @@ export const feminineBrands: Brand[] = [
   { name: "Sabrina Carpenter",   logo: L.sabrina,        slug: "sabrina-carpenter" },
   { name: "Salvatore Ferragamo", logo: L.ferragamo,      slug: "salvatore-ferragamo" },
   { name: "Shakira",             logo: L.shakira,        slug: "shakira" },
-  { name: "Tommy Hilfiger",      logo: L.tommy,          slug: "tommy" },
+  { name: "Tommy Hilfiger",      logo: L.tommy,          slug: "tommy",               marcaKey: "Tommy" },
   { name: "Valentino",           logo: L.valentino,      slug: "valentino",  cardBg: "#000000" },
   { name: "Versace",             logo: L.versace,        slug: "versace" },
   { name: "Viktor & Rolf",       logo: L.viktorRolf,     slug: "viktor-rolf" },
