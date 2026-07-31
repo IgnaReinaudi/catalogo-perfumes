@@ -3,6 +3,8 @@ import { feminineBrands, FEATURED_IDS } from "@/lib/data";
 import { supabase } from "@/lib/supabase";
 import type { Product } from "@/lib/supabase";
 
+export const revalidate = 300;
+
 export default async function FemeninoPage() {
   const ids = FEATURED_IDS.femenino;
 
