@@ -15,7 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Catálogo de Perfumes | Importados de Estados Unidos",
+  title: "Catálogo de Perfumes | CASABLANCA Perfumeria",
   description:
     "Los mejores precios de la provincia. Más de 1000 perfumes importados de Estados Unidos. Árabes, Masculinos y Femeninos.",
 };

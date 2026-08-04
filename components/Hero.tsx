@@ -143,7 +143,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.52 }}
           className="text-[#5a4a2a] text-xs sm:text-sm tracking-[0.25em] uppercase mb-12"
         >
-          Importados directamente de Estados Unidos
+          Perfumes importados originales y sellados
         </motion.p>
 
         {/* Stats */}
