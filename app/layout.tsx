@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "Catálogo de Perfumes | CASABLANCA Perfumeria",
   description:
     "Los mejores precios de la provincia. Más de 1000 perfumes importados de Estados Unidos. Árabes, Masculinos y Femeninos.",
+  icons: {
+    icon: "/casablancalogo.jpeg",
+  },
 };
 
 export default function RootLayout({
